@@ -1,0 +1,9 @@
+db:
+    image: mongo:2.4
+
+sanap:
+    image: eeacms/sanap:latest
+    links:
+        - db
+    ports:
+        - 5000:5000
