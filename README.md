@@ -1,7 +1,10 @@
 # eea.docker.sanap - Sanap Orchestration
 
 This repository contains the orchestration for https://github.com/eea/eea.sanap,
-the Self Assessment for National Adaptation Policy application.
+the Self Assessment for National Adaptation Policy application. 
+
+The application image is automatically built upon commit on Docker Hub: 
+eeacms/sanap - https://registry.hub.docker.com/u/eeacms/sanap/
 
 ## Starting up an instance
 
