@@ -1,8 +1,9 @@
 db:
     image: mongo:2.4
+    command: /entrypoint.sh --smallfiles
 
 sanap:
-    image: eeacms/sanap:latest
+    image: eeacms/sanap:lastest
     links:
         - db
     ports:
