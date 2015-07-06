@@ -1,9 +1,11 @@
 db:
     image: mongo:2.4
+    restart: always
     command: /entrypoint.sh --smallfiles
 
 sanap:
     image: eeacms/sanap:lastest
+    restart: always
     links:
         - db
     ports:
