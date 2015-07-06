@@ -21,3 +21,11 @@ To do that, run:
 
     # copy the folder to the container, assuming the label is: eeasanap_db_1
     docker run --rm -v `pwd`/data/:/host --volumes-from=eeasanap_db_1 busybox cp -r /host/db /data/
+
+## Environment variables
+The **sanap** container allows for the following environment variables which should be passed as a secret env_file:
+
+    SECRETY_KEY=""  # unique secret string
+    SENTRY_DSN=""   # url to Sentry logging endpoint
+    HOSTNAME=""     # public url of the sanap installation, defaults to http://projects.eionet.europa.eu
+    
