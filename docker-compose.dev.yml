@@ -10,3 +10,8 @@ sanap:
         - db
     ports:
         - 5000:5000
+    environment:
+        - DEBUG=True
+    volumes:
+        - ./eea.sanap/sanap:/app/sanap
+        - ./eea.sanap/libs:/app/libs

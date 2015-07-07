@@ -1,0 +1,4 @@
+[submodule "eea.sanap"]
+	path = eea.sanap
+	url = git@github.com:eea/eea.sanap
+	branch = master
